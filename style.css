@@ -13,9 +13,9 @@ th {
 }
 
 table {
-
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 12px;
 }
 
 .informatie {
@@ -40,7 +40,7 @@ td {
 
 a {
     text-decoration: none;
-    color: rgb(141, 141, 141);
+    color: white;
 }
 .edit{
     width: 100px;
@@ -100,4 +100,16 @@ input[type=text] , textarea{
     color: white;
     border-radius: 4px;
     border: transparent;
-  }
+}
+a{
+}
+.filmT{
+    padding: 5px;
+    width: 150px;
+    height: 33px;
+}
+.serieT{
+    padding: 5px;
+    width: 150px;
+    height: 33px;
+}

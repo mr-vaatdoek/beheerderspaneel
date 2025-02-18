@@ -11,8 +11,8 @@ CREATE TABLE `series` (
     summary TEXT NOT NULL,
     has_won_awards INT NOT NULL,
     seasons INT NOT NULL,
-    country VARCHAR(5) NOT NULL,
-    spoken_in_language ENUM('NL', 'EN') NOT NULL
+    country VARCHAR(5) NULL,
+    spoken_in_language ENUM('NL', 'EN') NULL
 );
 
 INSERT INTO `series` (`title`, `rating`, `summary`, `has_won_awards`, `seasons`, `country`, `spoken_in_language`) VALUES

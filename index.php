@@ -33,7 +33,7 @@ foreach ($films as $film) {
     $leegF .= '<tr>';
     $leegF .= '<td>' . $film['title'] . "</td>";
     $leegF .= "<td>$film[length_in_minutes]</td>";
-    $leegF .= "<td><a href='detail_film.php?id=$film[id]'> bekijk details</a></td>";
+    $leegF .= "<td class='detailF'><a href='detail_film.php?id=$film[id]'> bekijk details</a></td>";
 }
 ?>
 <!DOCTYPE html>
@@ -60,6 +60,8 @@ foreach ($films as $film) {
             ?>
         </tr>
     </table>
+<button class="serieT"><a href='add_serie.php?id=$film[id]'> Serie Toevoegen</a></button>
+    
     <h2> Films </h2>
     <table>
         <td> titel </td>
@@ -71,7 +73,8 @@ foreach ($films as $film) {
             ?>
         </tr>
     </table>
-
+    <button type="submit" class="filmT"><a href='add_film.php?id=$film[id]'> Film Toevoegen</a></button>
+    
 </body>
 
 </html>

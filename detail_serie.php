@@ -35,8 +35,8 @@ foreach ($series as $serie) {
                 << terug</button>
         </td>
         <tr>
-            <td>informatie</td>
-            <td>informatie</td>
+            <td colspan="2">informatie</td>
+           
         </tr>
         <tr>
             <td class="informatieT"> Awards </td>
@@ -46,14 +46,15 @@ foreach ($series as $serie) {
             <td class="informatieT"> Seasons </td>
             <td class="informatieT"> <?= $serie['seasons']; ?></td>
         </tr>
+        <tr>
         <td class="informatieT"> Country </td>
         <td class="informatieT"><?= $serie['country']; ?></td>
         </tr>
-        </tr>
+        <tr>
         <td class="informatieT"> Language </td>
         <td class="informatieT"><?= $serie['spoken_in_language']; ?></td>
         </tr>
-        </tr>
+        <tr>
         <td class="informatieT"> Rating </td>
         <td class="informatieT"><?= $serie['rating']; ?></td>
         </tr>
