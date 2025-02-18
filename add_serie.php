@@ -16,9 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $stmt->bindParam(7, $_POST['spoken_in_language']);
    
      $stmt->execute();
-
-
-
 }
 ?>
 

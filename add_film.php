@@ -13,11 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $stmt->bindParam(4, $_POST['summary']);
     $stmt->bindParam(5, $_POST['country_of_origin']);
     $stmt->bindParam(6, $_GET['youtube_trailer_id']);
-   
-
     
     $stmt->execute();
-
 }
 ?>
 
