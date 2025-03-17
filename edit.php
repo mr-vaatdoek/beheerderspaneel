@@ -116,14 +116,14 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 </tr>
             <?php endif; ?>
             <?php if ($media['soort'] == 'movies'): ?>
-            <tr>
-                <td>
-                    <label for="dvu" class="dvu">datum-uitkomst: <label>
-                </td>
-                <td>
-                    <input type="text" name="released_at" id="dvu" value="<?= $media['released_at'] ?>">
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        <label for="dvu" class="dvu">datum-uitkomst: <label>
+                    </td>
+                    <td>
+                        <input type="text" name="released_at" id="dvu" value="<?= $media['released_at'] ?>">
+                    </td>
+                </tr>
             <?php endif; ?>
             <?php if ($media['soort'] == 'series'): ?>
                 <tr class="series">

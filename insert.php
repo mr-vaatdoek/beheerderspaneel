@@ -1,5 +1,4 @@
 <?php
-
 require_once "pdo-connectie.php";
 
 
@@ -16,9 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         $stmt->bindParam(4, $_POST['summary']);
         $stmt->bindParam(5, $_POST['country_of_origin']);
         $stmt->bindParam(6, $_GET['youtube_trailer_id']);
-        
+
         $stmt->execute();
-    
     } else if ($soort == 'series') {
         $query = "INSERT INTO media (title, rating, summary, has_won_awards, seasons, country, spoken_in_language, soort) VALUES (?, ?, ?, ?, ?, ?, ?, 'series')";
 

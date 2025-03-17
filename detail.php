@@ -51,20 +51,20 @@ $soort = $films['soort'];
                 <td class="informatieData"> duur-in-minuten</td>
                 <td class="informatieData"><?= $films['length_in_minutes']; ?></td>
             </tr>
-            <?php } else { ?>
-                <tr>
-                    <td class="informatieData"> Awards </td>
-                    <td class="informatieData"><?= $films['has_won_awards']; ?></td>
-                </tr>
-                <tr>
-                    <td class="informatieData"> Seasons </td>
-                    <td class="informatieData"> <?= $films['seasons']; ?></td>
-                </tr>
-                <tr>
-                    <td class="informatieData"> land-uitkost</td>
-                    <td class="informatieData"> <?= $films['country_of_origin']; ?></td>
-                </tr>
-                <tr>
+        <?php } else { ?>
+            <tr>
+                <td class="informatieData"> Awards </td>
+                <td class="informatieData"><?= $films['has_won_awards']; ?></td>
+            </tr>
+            <tr>
+                <td class="informatieData"> Seasons </td>
+                <td class="informatieData"> <?= $films['seasons']; ?></td>
+            </tr>
+            <tr>
+                <td class="informatieData"> land-uitkost</td>
+                <td class="informatieData"> <?= $films['country_of_origin']; ?></td>
+            </tr>
+            <tr>
                 <td class="informatieData"> Language </td>
                 <td class="informatieData"><?= $films['spoken_in_language']; ?></td>
             </tr>
