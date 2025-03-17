@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 </td>
             </tr>
 
-            <?php if ($media['soort'] == 'series'): ?>
+            <?php if ($media['soort'] == 'series') : ?>
                 <tr class="series">
                     <td>
                         <label for="rating">rating: <label>
@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                     <textarea id="mschrijving" name="summary" rows="7" cols="20"><?= $media['summary'] ?></textarea>
                 </td>
             </tr>
-            <?php if ($media['soort'] == 'series'): ?>
+            <?php if ($media['soort'] == 'series') : ?>
                 <tr class="series">
                     <td>
                         <label for="awards">Aantal awards:</label>
@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 </tr>
             <?php endif; ?>
 
-            <?php if ($media['soort'] == 'movies'): ?>
+            <?php if ($media['soort'] == 'movies') : ?>
                 <tr class="films">
                     <td>
                         <label for="lim">Lengte in minuten:</label>
@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                     </td>
                 </tr>
             <?php endif; ?>
-            <?php if ($media['soort'] == 'movies'): ?>
+            <?php if ($media['soort'] == 'movies') : ?>
                 <tr>
                     <td>
                         <label for="dvu" class="dvu">datum-uitkomst: <label>
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                     </td>
                 </tr>
             <?php endif; ?>
-            <?php if ($media['soort'] == 'series'): ?>
+            <?php if ($media['soort'] == 'series') : ?>
                 <tr class="series">
                     <td>
                         <label for="seizoen">Seizoenen: </label>
@@ -136,7 +136,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 </tr>
             <?php endif; ?>
 
-            <?php if ($media['soort'] == 'movies'): ?>
+            <?php if ($media['soort'] == 'movies') : ?>
                 <tr>
                     <td>
                         <label for="lvu">Land van uitkomst: <label>
@@ -147,8 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 </tr>
             <?php endif; ?>
 
-            <?php if ($media['soort'] == 'movies'): ?>
-
+            <?php if ($media['soort'] == 'movies') : ?>
                 <tr class="films">
                     <td>
                         <label for="yt_trailer">YouTube trailer ID: <label>

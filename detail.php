@@ -37,8 +37,7 @@ $soort = $films['soort'];
             <td class="informatieData">informatie</td>
         </tr>
         <?php if ($soort == 'movies') {
-        ?>
-
+            ?>
             <tr>
                 <td class="informatieData"> datum-uitkost </td>
                 <td class="informatieData"><?= $films['released_at']; ?></td>
@@ -77,7 +76,7 @@ $soort = $films['soort'];
 
     <h2>omschijving</h2>
     <p class="borderD">
-        <td class="omschrijvingT"><?= $films['summary']; ?></td>
+        <td class="omschrijvingT"><?= $films['summary'] ; ?></td>
     </p>
     <button>
         <a href="edit.php?id=<?= $films['id'] ?>" class="knopEdit">
@@ -93,5 +92,4 @@ $soort = $films['soort'];
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </body>
 <?php } ?>
-
 </html>
