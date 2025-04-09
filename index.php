@@ -61,6 +61,7 @@ foreach ($films as $film) {
             ?>
         </tr>
     </table>
+    6.
     
     <h2> Films </h2>
     <table class="F_Itabel">
@@ -68,9 +69,7 @@ foreach ($films as $film) {
         <td class="tabel"><a href="?order1by=films<?= $link1 ?>"> &darr; duur </a> </td>
         <td class="tabel"> omschijving</td>
         <tr class="textF">
-            <?php
-            echo $leegF;
-            ?>
+            <?= $leegF; ?>
         </tr>
     </table>
     
